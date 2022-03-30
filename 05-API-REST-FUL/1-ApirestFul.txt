@@ -1,0 +1,68 @@
+¿Qué es un API RESTFul?
+
+ En las lecciones anteriores hablamos de dos componentes que intervienen en la
+ comunicacion de una aplicacion ya sea web o mobile. En este caso
+ nos centramos en la aplicacion web:
+
+ Tenemos:
+  Un SERVIDOR y un CLIENTE que se comunican a travez de un protocolo
+  HTTP o a travez de un protocolo seguro HTTPS, para tener un intercambio
+  de datos seguro entre un cliente y un servidor...
+
+
+
+              CLIENTE-------      ------SERVIDOR
+                            |    |
+                            -HTTP-
+
+Un SERVIDOR lo que hace es publicar un SERVICIO que puede ser una aplicacion
+que esta a la espera de ciertas peticiones. Esas peticiones se manejan
+por de unos estados que son propios del protocolo HTTP, entonces el 
+cliente lo que hace es llamar a ese servicio a travezde una llamada 
+asincrona (para eso nos valemos de AJAX). Entonces el cliente va a llamar
+al servidor, el servidor va a procesar esos datos y los va a devolver.
+
+
+
+
+Tenemos un servidor, con el servicio publicado que puede ser un API RESTFul
+ya sea en cualquier lenguaje por el lado del BACK-END, en este caso nosotros 
+vamos a manejar 4 operaciones basicas para hacer el intercambio de datos
+entre un cliente y un servidor:
+
+CREATE ==>crear datos
+READ ==>leer datos
+UPDATE ==>actualizar datos
+DELETE ==>eliminar datos
+
+Estas se conocen como OPERACIONES CRUD
+
+
+Supongamos que hay una empresa llamada ABC Company, y para que esta empresa
+pueda ofrecer un servicio API REST hacia sus desarrolladores y que estos 
+puedan consumir sus datos que se publican, podemos valernos de la direccion
+url:
+
+https://abccompany.com/api/clientes
+
+A travez de esta direccion, vamos a solicitar toda la informacion de clientes
+ABC Company.
+
+Entonces, volvemos al servidor que esta a la espera de peticiones, con las 
+4 operaciones CRUD. Pero ¿cual seria las peticiones que va a procesar para 
+cada una de ellas?
+
+CREATE ==> POST
+
+READ ==> GET
+
+UPDATE ==> PUT
+
+DELETE ==> DELETE
+
+Esto es lo que normalmente compone un API REST, es un servicio, que se publica 
+en un servidor y que normalmente se hace transferencia de datos entre el 
+cliente y el servidor de forma asincrona, pero hay ciertas operaciones que 
+se haran en el servidor a travez de un API REST.
+
+
